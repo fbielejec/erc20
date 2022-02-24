@@ -1,3 +1,7 @@
+# secrets
+.env
+
+# compiled contracts
 artifacts
 
 # Ignore build artifacts from the local tests sub-crate.

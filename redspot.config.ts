@@ -7,6 +7,8 @@ import "@redspot/watcher";
 import "@redspot/explorer";
 import "@redspot/decimals";
 
+require('dotenv').config() // Store environment-specific variable from '.env' to process.env
+
 export default {
   defaultNetwork: "development",
   contract: {
@@ -25,7 +27,7 @@ export default {
     smartnet: {
       endpoint: "wss://ws-smartnet.test.azero.dev",
       gasLimit: "400000000000",
-      accounts: ["bottom drive obey lake curtain smoke basket hold race lonely fit walk//Filip"],
+      accounts: [process.env.SMARTNET_MNEMONIC],
       types: {},
     },
   },
