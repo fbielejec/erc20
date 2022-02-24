@@ -1,0 +1,36 @@
+{
+  "name": "erc20",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=14.x"
+  },
+  "resolutions": {
+    "@polkadot/api": "^7.6.1",
+    "@polkadot/api-contract": "^7.6.1",
+    "@polkadot/util": "8.3.3",
+    "@polkadot/util-crypto": "8.3.3",
+    "@polkadot/keyring": "8.3.3",
+    "typescript": "^4.3.2"    
+  },
+  "dependencies": {
+    "@redspot/chai": "0.13.3",
+    "@redspot/decimals": "0.13.3",
+    "@redspot/explorer": "0.13.3",
+    "@redspot/gas-reporter": "0.13.3",
+    "@redspot/known-types": "0.13.3",
+    "@redspot/patract": "0.13.3",
+    "@redspot/watcher": "0.13.3",
+    "@types/chai": "^4.2.14",
+    "@types/mocha": "^8.0.3",
+    "chai": "^4.2.0",
+    "redspot": "0.13.3",
+    "typescript": "^4.3.2"
+  },
+  "module": "true",
+  "scripts": {
+    "build": "yarn redspot compile",
+    "test": "yarn redspot test --no-compile",
+    "explorer": "yarn redspot explorer"
+  }
+}
