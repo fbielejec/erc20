@@ -6,8 +6,9 @@ import "@redspot/known-types";
 import "@redspot/watcher";
 import "@redspot/explorer";
 import "@redspot/decimals";
+import "dotenv/config"; // Store environment-specific variable from '.env' to process.env
 
-require('dotenv').config() // Store environment-specific variable from '.env' to process.env
+// require('dotenv').config() 
 
 export default {
   defaultNetwork: "development",
