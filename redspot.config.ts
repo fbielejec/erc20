@@ -8,7 +8,7 @@ import "@redspot/explorer";
 import "@redspot/decimals";
 import "dotenv/config"; // Store environment-specific variable from '.env' to process.env
 
-// require('dotenv').config() 
+// console.log(process.env.SMARTNET_MNEMONIC)
 
 export default {
   defaultNetwork: "development",
@@ -27,7 +27,7 @@ export default {
     },
     smartnet: {
       endpoint: "wss://ws-smartnet.test.azero.dev",
-      gasLimit: "400000000000",
+      gasLimit: "1048576",
       accounts: [process.env.SMARTNET_MNEMONIC],
       types: {},
     },
