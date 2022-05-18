@@ -15,7 +15,7 @@ export default {
   contract: {
     ink: {
       docker: false,
-      toolchain: "nightly-2022-02-02",
+      toolchain: "nightly",
       sources: ["contracts/**/*"],
     },
   },
